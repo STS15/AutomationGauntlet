@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "automationgauntlet",
+  "key": {
+    "P": {
+      "item": "minecraft:clay_ball"
+    },
+    "M": {
+      "item": "mysticalagradditions:nether_star_shard"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "components": {
+        "productivebees:bee_type": "productivebees:withered"
+      },
+      "items": "productivebees:configurable_honeycomb"
+    },
+    "G": {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  },
+  "pattern": [
+    "MGM",
+    "BPB",
+    "MGM"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:nether_star"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "hostilenetworks"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "geore"
+      }
+    }
+  ]
+}

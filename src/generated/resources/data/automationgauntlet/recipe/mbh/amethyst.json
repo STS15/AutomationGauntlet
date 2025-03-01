@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "automationgauntlet",
+  "key": {
+    "P": {
+      "type": "neoforge:components",
+      "components": {
+        "hostilenetworks:data_model": "hostilenetworks:shulker"
+      },
+      "items": "hostilenetworks:prediction"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "components": {
+        "productivebees:bee_type": "productivebees:amethyst"
+      },
+      "items": "productivebees:configurable_honeycomb"
+    },
+    "M": {
+      "item": "mysticalagriculture:amethyst_essence"
+    }
+  },
+  "pattern": [
+    "MBM",
+    "BPB",
+    "MBM"
+  ],
+  "result": {
+    "count": 48,
+    "id": "minecraft:amethyst_shard"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hostilenetworks"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "geore"
+      }
+    }
+  ]
+}

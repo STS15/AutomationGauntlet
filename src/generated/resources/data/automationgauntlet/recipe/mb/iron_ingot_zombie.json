@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "automationgauntlet",
+  "key": {
+    "P": {
+      "item": "minecraft:clay_ball"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "components": {
+        "productivebees:bee_type": "productivebees:iron"
+      },
+      "items": "productivebees:configurable_honeycomb"
+    },
+    "M": {
+      "item": "mysticalagriculture:iron_essence"
+    }
+  },
+  "pattern": [
+    "MBM",
+    "BPB",
+    "MBM"
+  ],
+  "result": {
+    "count": 27,
+    "id": "minecraft:iron_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "hostilenetworks"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "geore"
+      }
+    }
+  ]
+}

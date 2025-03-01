@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "automationgauntlet",
+  "key": {
+    "P": {
+      "type": "neoforge:components",
+      "components": {
+        "hostilenetworks:data_model": "hostilenetworks:drowned"
+      },
+      "items": "hostilenetworks:prediction"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "components": {
+        "productivebees:bee_type": "productivebees:copper"
+      },
+      "items": "productivebees:configurable_honeycomb"
+    },
+    "M": {
+      "item": "mysticalagriculture:copper_essence"
+    },
+    "G": {
+      "item": "geore:copper_shard"
+    }
+  },
+  "pattern": [
+    "MGM",
+    "BPB",
+    "MGM"
+  ],
+  "result": {
+    "count": 32,
+    "id": "minecraft:copper_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hostilenetworks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "geore"
+    }
+  ]
+}
